@@ -1,0 +1,22 @@
+save:
+
+ path: article/save
+ controller : App\Controller\IndexController::save 
+
+
+home:
+ path: /home
+ controller : App\Controller\IndexController::home
+ 
+ajoute:
+  path: /ajouter
+  controller : App\Controller\IndexController::new
+modifier:
+  path: /modifier/{id}
+  controller : App\Controller\IndexController::edit
+show:
+  path: /show/{id}
+  controller : App\Controller\IndexController::show
+delete:
+  path: /delete/{id}
+  controller : App\Controller\IndexController::delete
